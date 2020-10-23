@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dh11a.restfulstudentapp.DetailsActivity">
+
+    <TextView
+        android:id="@+id/textViewStudentname"
+        android:layout_width="368dp"
+        android:layout_height="500dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:text="TextView"
+        android:textColor="?attr/colorPrimaryDark"
+        android:textColorLink="?attr/actionModeSplitBackground"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewStudentgender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textViewStudentname"
+        android:layout_marginLeft="51dp"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="33dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentname" />
+
+    <TextView
+        android:id="@+id/textViewStudentdob"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentgender"
+        android:layout_alignStart="@+id/textViewStudentgender"
+        android:layout_below="@+id/textViewStudentgender"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentgender" />
+
+    <TextView
+        android:id="@+id/textViewStudentaddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/textViewStudentdob"
+        android:layout_alignRight="@+id/textViewStudentdob"
+        android:layout_below="@+id/textViewStudentdob"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentdob" />
+
+
+    <TextView
+        android:id="@+id/textViewStudentpostcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentaddress"
+        android:layout_alignStart="@+id/textViewStudentaddress"
+        android:layout_below="@+id/textViewStudentaddress"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentaddress" />
+
+
+    <TextView
+        android:id="@+id/textViewStudentstudentNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentpostcode"
+        android:layout_alignStart="@+id/textViewStudentpostcode"
+        android:layout_below="@+id/textViewStudentpostcode"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentpostcode" />
+
+    <TextView
+        android:id="@+id/textViewStudentcourseTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentstudentNumber"
+        android:layout_alignStart="@+id/textViewStudentstudentNumber"
+        android:layout_below="@+id/textViewStudentstudentNumber"
+        android:layout_marginTop="17dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentstudentNumber" />
+
+    <TextView
+        android:id="@+id/textViewStudentstartDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentcourseTitle"
+        android:layout_alignStart="@+id/textViewStudentcourseTitle"
+        android:layout_below="@+id/textViewStudentcourseTitle"
+        android:layout_marginTop="18dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentcourseTitle" />
+
+
+    <TextView
+        android:id="@+id/textViewStudentbursary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentstartDate"
+        android:layout_alignStart="@+id/textViewStudentstartDate"
+        android:layout_below="@+id/textViewStudentstartDate"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentstartDate" />
+
+    <TextView
+        android:id="@+id/textViewStudentemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textViewStudentbursary"
+        android:layout_alignStart="@+id/textViewStudentbursary"
+        android:layout_below="@+id/textViewStudentbursary"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewStudentbursary" />
+
+    <Button
+        android:id="@+id/buttonUpdateStudent"
+        android:layout_width="200dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="@color/colorPrimary"
+        android:fontFamily="font/arima_madurai_thin"
+        android:text="Update Student"
+        android:textColor="#f5f5f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+    <Button
+        android:id="@+id/buttonDeleteStudent"
+        android:layout_width="209dp"
+        android:layout_height="51dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:layout_toEndOf="@+id/buttonUpdateStudent"
+        android:layout_toRightOf="@+id/buttonUpdateStudent"
+        android:background="@color/colorPrimary"
+        android:fontFamily="font/arima_madurai_thin"
+        android:text="Delete Student"
+        android:textColor="#f5f5f5"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1" />
+
+</RelativeLayout>
